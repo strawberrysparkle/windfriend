@@ -36,7 +36,7 @@ def build_response(session_attributes, speechlet_response):
 
 # --------------- Functions that control the skill's behavior ------------------
 
-key = "API_key_goes_here"
+key = "8cc807b5019578b3"
 
 def say_wind_speed(intent, session):
     session_attributes = {}
@@ -108,6 +108,8 @@ def on_intent(intent_request, session):
     # Dispatch to your skill's intent handlers
     if intent_name == "CityIntent":
         return say_wind_speed(intent, session)
+    elif intent_name == "StadtIntent":
+        return say_wind_speed_de(intent, session)
     elif intent_name == "AMAZON.HelpIntent":
         return get_welcome_response()
     elif intent_name == "AMAZON.CancelIntent" or intent_name == "AMAZON.StopIntent":
