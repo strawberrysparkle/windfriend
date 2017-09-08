@@ -6,3 +6,6 @@ wind speed.
 
 You can create a free account with Weather Underground and get an API key (just insert it in the appropriate location in the code)
 that'll give you 500 calls a month. (This is why I haven't published the skill on the Alexa store.)
+
+Update: I added German-language support (still just for US cities though), including conversion of the wind speed into a number
+with a comma separating the decimals place instead of a period, to conform to German conventions.
